@@ -35,6 +35,7 @@ prisma.$use(async (params, next) => {
 Possible use cases for middleware include:
 
 - Setting or overwriting a field value - for example, [setting the context language of a blog post comment](session-data-middleware)
+- Hashing password from input data with bcrypt
 - Validating input data - for example, check user input for inappropriate language via an external service
 - Intercept a `delete` query and change it to an `update` in order to perform a [soft delete](soft-delete-middleware)
 - [Log the time taken to perform a query](logging-middleware)
